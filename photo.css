@@ -1,0 +1,119 @@
+/*boutton acceuil*/
+.Accueil a {
+    display: flex;
+    font-family: "Gwendolyn";
+    font: weight 700px;
+    font-size: 2em;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: #010101;
+
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color: #ffffff;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4 1.6s ease-out forwards;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: flex;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+}
+
+/* Close btn */
+#openBtn {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: flex;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.gallerie {
+    margin: 15px;
+    border: 1px solid whitesmoke;
+    float: left;
+    width: 200px;
+}
+
+.gallerie:hover {
+    border: 2px solid green;
+}
+
+.gallerie img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.gallerie:nth-child(1) {
+    animation: apparation 0.8s 0.2s ease-out forwards;
+}
+
+.gallerie:nth-child(2) {
+    animation: apparation 0.8s 0.6s ease-out forwards;
+}
+
+.gallerie:nth-child(3) {
+    animation: apparation 0.8s 0.4s ease-out forwards;
+}
+
+.gallerie:nth-child(4) {
+    animation: apparation 0.8s 1s ease-out forwards;
+}
+
+@keyframes apparition {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

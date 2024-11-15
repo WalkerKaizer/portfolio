@@ -1,0 +1,287 @@
+/*boutton acceuil*/
+.Accueil a {
+    display: flex;
+    font-size: 2em;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    border: 50px;
+
+}
+
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color: #ffffff;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: flex;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+}
+
+/* Close btn */
+#openBtn {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: flex;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+/* Sous-menu */
+.sous-menu {
+    display: none;
+    position: absolute;
+    /* Position absolue pour sortir du flux normal */
+    top: 0;
+    /* Aligne le sous-menu au même niveau que l'élément parent */
+    left: -200px;
+    /* Place le sous-menu à gauche du menu parent (ajuste la valeur si nécessaire) */
+    background-color: #444;
+    width: 200px;
+    padding-left: 0;
+    z-index: 1;
+}
+
+.sous-menu li a {
+    padding: 10px;
+    color: white;
+}
+
+.sous-menu li a:hover {
+    background-color: #575757;
+}
+
+.sidenav li {
+    position: relative;
+    /* Nécessaire pour que le sous-menu soit positionné par rapport au parent */
+}
+
+/* Affichage du sous-menu au survol */
+.sidenav li:hover>.sous-menu {
+    display: block;
+}
+
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    background-color: #444;
+    width: 200px;
+    padding-left: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+    /* Transition */
+    opacity: 0;
+    /* Rend le sous-menu invisible initialement */
+}
+
+.sidenav li:hover>.sous-menu {
+    display: block;
+    opacity: 1;
+    /* Affiche le sous-menu lors du survol */
+}
+
+/*first title page1*/
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: "Modak", sistem-ui;
+    font-weight: 400;
+    font-size: 3.5em;
+
+}
+
+* {
+    margin: 0;
+}
+
+/*background video menu*/
+.background {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+
+
+
+}
+
+.background video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+
+}
+
+.background::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -99;
+}
+
+/*main projets*/
+.projet {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 35px;
+
+}
+
+
+.block1 img {
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.block {
+    margin-left: 25px;
+    width: 200px;
+
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 25px;
+
+}
+
+#Travaux {
+    background-color: #000000;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+
+.Cadre {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.Montage img {
+    object-fit: cover;
+    width: 300px;
+    height: 300x;
+    margin-left: 30px;
+    margin-right: 200px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+.Illustration img {
+    object-fit: cover;
+    width: 300px;
+    height: 220px;
+    margin-top: 400px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+    list-style-type: none;
+}
+
+.footer.sm {
+    margin-left: 25px;
+    border-top: solid, 1px, white;
+    border-bottom: solid, 1px, white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.logiciel_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logiciel_container img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+
+
+.foot-v {
+    display: flex;
+    justify-content: space-evenly;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+
+}
