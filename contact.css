@@ -76,30 +76,48 @@ header {
 }
 
 h1 {
+
+    margin-bottom: 25px;
+}
+
+form {
+    background: #FFFFFF;
+    width: 350px;
     text-align: center;
-    margin-bottom: 100px;
+    margin: 30px auto;
+    box-shadow: 4px 4px 5px #999999;
+    padding-bottom: 40px;
+    border-radius: 10px;
 }
 
-#nom #email #àpropos {
-    box-shadow: none;
-}
-
-form div {
-    display: flex;
-    justify-content: center;
-    font-size: larger;
-    padding: 50px;
-    font-weight: 400;
-    min-height: 3em;
-    min-width: 8em;
-    margin-top: 1.5em;
+h1 {
+    height: 40px;
+    width: 350px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 15px 0 0 0;
+    border-radius: 10px 10px 0 0;
 
 }
 
-form .conseil1 {
-    margin-bottom: 15px;
-    box-shadow: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 500;
+input {
+    margin: 20px 0px;
+    width: 300px;
+    border: none;
+    padding: 5px 0;
+    border-bottom: solid 1px gray;
+    color: #E91E63;
+}
+
+button {
+    border: none;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    box-shadow: 4px 4px 5px #999999;
+    border-radius: 10px;
+
 }

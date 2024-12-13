@@ -1,4 +1,7 @@
-/*boutton acceuil*/
+body {
+    background-color: #000000;
+}
+
 .Accueil a {
     display: flex;
     font-family: "Gwendolyn";
@@ -8,11 +11,10 @@
     margin-top: 20px;
     list-style: none;
     text-decoration: none;
-    color: #010101;
+    color: white;
 
 }
 
-/* Sidenav menu */
 .sidenav {
     height: 100%;
     width: 250px;
@@ -70,6 +72,6 @@
     display: flex;
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
     margin: 6px 0;
 }

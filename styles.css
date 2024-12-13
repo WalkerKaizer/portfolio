@@ -78,11 +78,8 @@
 .sous-menu {
     display: none;
     position: absolute;
-    /* Position absolue pour sortir du flux normal */
     top: 0;
-    /* Aligne le sous-menu au même niveau que l'élément parent */
     left: -200px;
-    /* Place le sous-menu à gauche du menu parent (ajuste la valeur si nécessaire) */
     background-color: #444;
     width: 200px;
     padding-left: 0;
@@ -100,10 +97,8 @@
 
 .sidenav li {
     position: relative;
-    /* Nécessaire pour que le sous-menu soit positionné par rapport au parent */
 }
 
-/* Affichage du sous-menu au survol */
 .sidenav li:hover>.sous-menu {
     display: block;
 }
@@ -118,18 +113,14 @@
     padding-left: 0;
     z-index: 1;
     transition: opacity 0.3s ease-in-out;
-    /* Transition */
     opacity: 0;
-    /* Rend le sous-menu invisible initialement */
 }
 
 .sidenav li:hover>.sous-menu {
     display: block;
     opacity: 1;
-    /* Affiche le sous-menu lors du survol */
 }
 
-/*first title page1*/
 h1 {
     text-align: center;
     padding-bottom: 15px;
@@ -138,7 +129,7 @@ h1 {
 }
 
 h1 {
-    font-family: "Modak", sistem-ui;
+    font-family: "Domine";
     font-weight: 400;
     font-size: 3.5em;
 
@@ -180,7 +171,7 @@ h1 {
 }
 
 /*main projets*/
-.projet {
+.projets {
     display: flex;
     justify-content: flex-start;
     margin-left: 35px;
@@ -189,9 +180,9 @@ h1 {
 
 
 .block1 img {
-    border-radius: 10px;
+    border-radius: 5px;
     width: 350px;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     margin-bottom: 15px;
 }
@@ -212,35 +203,60 @@ h2 {
 
 #Travaux {
     background-color: #000000;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+
 
 }
 
-.Cadre {
+.Cadre-grid {
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    gap: 5px;
+
 }
 
-.Montage img {
+
+.projet1 img {
     object-fit: cover;
     width: 300px;
-    height: 300x;
+    height: 400x;
     margin-left: 30px;
     margin-right: 200px;
     margin-bottom: 25px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
-.Illustration img {
+.projet2 img {
     object-fit: cover;
     width: 300px;
-    height: 220px;
-    margin-top: 400px;
+    height: 400x;
+    margin-left: 30px;
+    margin-right: 200px;
     margin-bottom: 25px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
+
+.projet3 img {
+    object-fit: cover;
+    width: 300px;
+    height: 400x;
+    margin-left: 30px;
+    margin-right: 200px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.projet4 img {
+    object-fit: cover;
+    width: 300px;
+    height: 400x;
+    margin-left: 30px;
+    margin-right: 200px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
 
 
 
@@ -263,25 +279,215 @@ h3 {
     margin-bottom: 15px;
 }
 
-.logiciel_container {
-    display: flex;
-    justify-content: space-evenly;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.logiciel_container img {
+* {
+    margin: 0;
+}
+
+.caroussel {
+
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    margin-bottom: 35px;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0))
+}
+
+@keyframes scrollLeft {
+
+
+    to {
+        left: -200px;
+    }
+}
+
+.outil {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 4), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+
+
+}
+
+.outil1 {
+    animation-delay: calc(30s / 4 * (4 - 1) * -1);
+}
+
+.outil2 {
+    animation-delay: calc(30s / 4 * (4 - 2) * -1);
+}
+
+.outil3 {
+    animation-delay: calc(30s / 4 * (4 - 3) * -1);
+}
+
+.outil4 {
+    animation-delay: calc(30s / 4 * (4 - 4) * -1);
+}
+
+.outil5 {
+    animation-delay: calc(30s / 4 * (4 - 5) * -1);
+}
+
+
+
+.caroussel img {
     object-fit: cover;
     width: 100px;
     height: 100px;
     margin-right: 10px;
 }
 
-
-
-.foot-v {
+#coworking {
     display: flex;
-    justify-content: space-evenly;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: black;
+}
 
+.co-projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.co {
+    width: 100%;
+    height: 180px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.co img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.co img:hover {
+    transform: scale(1.1);
+
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+
+}
+
+.hobbies h2 {
+    color: #000000;
+}
+
+.hobby {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hobby span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.hobby::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hobby:hover::after {
+    opacity: 1;
+}
+
+.hobby:hover span {
+    opacity: 1;
+    z-index: 1;
+}
+
+.container-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: black;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+
+}
+
+.container-end :hover {
+    background-color: white;
+    color: black;
 }
