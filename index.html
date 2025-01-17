@@ -4,21 +4,36 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport">
     <title>CuriousTech</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
     <header>
+        <div id="loader">
+            <svg viewBox="0 0 240 240" height="240" width="240" class="pl">
+                <circle stroke-linecap="round" stroke-dashoffset="-330" stroke-dasharray="0 660" stroke-width="20"
+                    stroke="#000" fill="none" r="105" cy="120" cx="120" class="pl__ring pl__ring--a"></circle>
+                <circle stroke-linecap="round" stroke-dashoffset="-110" stroke-dasharray="0 220" stroke-width="20"
+                    stroke="#000" fill="none" r="35" cy="120" cx="120" class="pl__ring pl__ring--b"></circle>
+                <circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none"
+                    r="70" cy="120" cx="85" class="pl__ring pl__ring--c"></circle>
+                <circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none"
+                    r="70" cy="120" cx="155" class="pl__ring pl__ring--d"></circle>
+            </svg>
+        </div>
+
         <div class="background">
             <video autoplay="autoplay" muted="" loop="infinite" src="Vidéo/Background.mp4"></video>
             <div id="mySidenav" class="sidenav">
                 <a id="closeBtn" href="#" class="close">×</a>
                 <ul>
-                    <li><a href="Conception de site.html">Conception de site</a></li>
+                    <li><a href="Conception Web.html">Conception de site</a></li>
                     <li id="montageMenu">
                         <a href="Montage.html">Montage</a>
                         <ul class="sous-menu">
@@ -62,7 +77,6 @@
             </div>
 
         </section>
-        <!--faire des captures d'écran vidéo-->
         <section id="Travaux">
             <h2>Projets recents</h2>
             <div class="Cadre-grid">
@@ -86,13 +100,13 @@
             <h3>OUTIL</h3>
             <div class="caroussel">
                 <div class="outil outil1">
-                    <img src="img/image4.png" alt="img4">
+                    <img src="img/image24.png" alt="img4">
                 </div>
                 <div class="outil outil2">
-                    <img src="img/image5.png" alt="img5">
+                    <img src="img/image25.png" alt="img5">
                 </div>
                 <div class="outil outil3">
-                    <img src="img/image6.png" alt="img6">
+                    <img src="img/image26.png" alt="img6">
                 </div>
                 <div class="outil outil4">
                     <img src="img/image8.png" alt="img8">
