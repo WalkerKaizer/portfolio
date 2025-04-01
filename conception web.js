@@ -49,7 +49,18 @@ function lazyLoad() {
         sousMenu.style.display = 'none';
     })
 
+const video = document.getElementById("video");
+
 }
+video.addEventListener("mouseenter", () => {
+    video.play();
+});
+
+video.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+});
+
 
 
 

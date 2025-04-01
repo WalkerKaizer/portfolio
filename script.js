@@ -33,3 +33,30 @@ window.addEventListener("load", function () {
         document.getElementById("content").style.display = "block";
     }, 3000); // 3000ms = 3 secondes
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hiddenElements = document.querySelectorAll('.hidden');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // Désactive l’observation une fois visible
+            }
+        });
+    }, { threshold: 0.1 });
+
+    hiddenElements.forEach((el) => observer.observe(el));
+});
+const videos = document.querySelectorAll(".video-hover");
+
+videos.forEach(video => {
+    video.addEventListener("mouseenter", () => {
+        video.play();
+    });
+
+    video.addEventListener("mouseleave", () => {
+        video.pause();
+        video.currentTime = 0;
+    });
+});

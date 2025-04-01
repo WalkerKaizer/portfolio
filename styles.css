@@ -1,3 +1,15 @@
+* {
+    font-family: 'Oswald', serif !important;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #loader {
     position: fixed;
     top: 0;
@@ -58,12 +70,9 @@
     display: none;
 }
 
-
 .Accueil a {
     display: flex;
     font-size: 2em;
-    margin-left: 20px;
-    margin-top: 20px;
     list-style: none;
     text-decoration: none;
     color: #ffffff;
@@ -73,14 +82,12 @@
 
 
 .sidenav {
-    height: 100%;
-    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
     right: -250px;
     background-color: black;
-    padding-top: 60px;
+    padding-top: 40px;
     transition: right 0.5s ease;
 }
 
@@ -110,7 +117,8 @@
 
 
 #openBtn {
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     right: 0;
     margin-right: 20px;
     margin-top: 20px;
@@ -179,19 +187,18 @@
     opacity: 1;
 }
 
-h1 {
-    text-align: center;
-    padding-bottom: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+
+
 
 h1 {
+    text-align: center;
+    margin: 40px 0 40px 0;
     font-family: "Domine";
     font-weight: 400;
     font-size: 3.5em;
-
 }
+
+
 
 * {
     margin: 0;
@@ -228,26 +235,37 @@ h1 {
     z-index: -99;
 }
 
+
 /*main projets*/
-.projets {
+
+.projet {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 35px;
+    justify-content: center;
 
 }
 
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 
-.block1 img {
+    width: 70%;
+
+
+}
+
+.block img {
     border-radius: 5px;
     width: 350px;
     height: 400px;
     object-fit: cover;
-    margin-bottom: 15px;
+
 }
 
-.block {
-    margin-left: 25px;
-    width: 200px;
+.block p {
+    text-align: center;
+    font-size: 1.5em;
 
 }
 
@@ -255,86 +273,78 @@ h2 {
     text-align: center;
     color: #ffffff;
     font-size: 2em;
-    margin-bottom: 25px;
-
-}
-
-#Travaux {
-    background-color: #000000;
+    margin: 25px 0 25px 0px;
 
 
 }
 
-.Cadre-grid {
+/* Projets en cours */
+
+
+.Card {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
     justify-content: center;
-    margin: 0;
-    gap: 5px;
+    gap: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+.C1 video {
+    object-fit: cover;
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+    border-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 
 }
 
 
-.projet1 img {
+.C2 video {
     object-fit: cover;
-    width: 300px;
-    height: 400x;
-    margin-left: 30px;
-    margin-right: 200px;
-    margin-bottom: 25px;
+    height: 300px;
+    width: 250px;
+    border-right: 10px;
+    cursor: pointer;
     border-radius: 5px;
 }
 
-.projet2 img {
+.C3 video {
     object-fit: cover;
-    width: 300px;
-    height: 400x;
-    margin-left: 30px;
-    margin-right: 200px;
-    margin-bottom: 25px;
+    height: 300px;
+    width: 250px;
+    border-right: 10px;
+    cursor: pointer;
     border-radius: 5px;
 }
 
-.projet3 img {
+.C4 video {
     object-fit: cover;
-    width: 300px;
-    height: 400x;
-    margin-left: 30px;
-    margin-right: 200px;
-    margin-bottom: 25px;
+    height: 300px;
+    width: 250px;
+    cursor: pointer;
     border-radius: 5px;
 }
 
-.projet4 img {
-    object-fit: cover;
-    width: 300px;
-    height: 400x;
-    margin-left: 30px;
-    margin-right: 200px;
-    margin-bottom: 25px;
-    border-radius: 5px;
+.content-text {
+    background-color: white;
+    height: 150px;
+    width: 250px;
+    position: absolute;
+
+
 }
 
 
 
-
-footer {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: left;
-    list-style-type: none;
-}
-
-.footer.sm {
-    margin-left: 25px;
-    border-top: solid, 1px, white;
-    border-bottom: solid, 1px, white;
-}
-
-h3 {
+#logiciel h3 {
     text-align: center;
     font-size: 2em;
-    margin-bottom: 15px;
+    margin: 25px 0 25px 0px;
 }
 
 *,
@@ -354,8 +364,8 @@ h3 {
     margin-inline: auto;
     margin-bottom: 35px;
     position: relative;
-    height: 100px;
-    margin-top: 5rem;
+    height: 200px;
+    margin: 30px 0 30px 0;
     overflow: hidden;
     mask-image: linear-gradient(to right,
             rgba(0, 0, 0, 0),
@@ -373,48 +383,45 @@ h3 {
 }
 
 .outil {
-    width: 200px;
+    width: 100px;
     height: 100px;
-    background-color: white;
     border-radius: 6px;
     position: absolute;
-    left: max(calc(200px * 4), 100%);
+    left: max(calc(200px * 5), 100%);
     animation-name: scrollLeft;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
-
-
-
 }
 
 .outil1 {
-    animation-delay: calc(30s / 4 * (4 - 1) * -1);
+    animation-delay: calc(30s / 5 * (5 - 1) * -1);
 }
 
 .outil2 {
-    animation-delay: calc(30s / 4 * (4 - 2) * -1);
+    animation-delay: calc(30s / 5 * (5 - 2) * -1);
 }
 
 .outil3 {
-    animation-delay: calc(30s / 4 * (4 - 3) * -1);
+    animation-delay: calc(30s / 5 * (5 - 3) * -1);
 }
 
 .outil4 {
-    animation-delay: calc(30s / 4 * (4 - 4) * -1);
+    animation-delay: calc(30s / 5 * (5 - 4) * -1);
 }
 
 .outil5 {
-    animation-delay: calc(30s / 4 * (4 - 5) * -1);
+    animation-delay: calc(30s / 5 * (5 - 5) * -1);
 }
 
 
 
 .caroussel img {
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
     margin-right: 10px;
 }
 
@@ -423,8 +430,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
-    background-color: black;
+    margin: 15px 0 15px 0;
 }
 
 .co-projet {
@@ -462,13 +468,13 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
-    background-color: #ffffff;
+    margin: 15px 0 15px 0;
+
 
 }
 
 .hobbies h2 {
-    color: #000000;
+    color: #ffffff;
 }
 
 .hobby {
@@ -528,11 +534,11 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 50px 0;
-    background-color: black;
+
 
 }
 
-.container p {
+.container a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -549,4 +555,17 @@ h3 {
 .container-end :hover {
     background-color: white;
     color: black;
+}
+
+footer {
+    /*background-color: #000000;*/
+    color: #ffffff;
+    text-align: left;
+    list-style-type: none;
+}
+
+.footer.sm {
+    margin-left: 25px;
+    border-top: solid, 1px, white;
+    border-bottom: solid, 1px, white;
 }
