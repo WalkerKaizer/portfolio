@@ -22,7 +22,7 @@ body {
     z-index: 1;
     top: 0;
     right: -250px;
-    background-color: #ffffff;
+    background-color: #000000;
     padding-top: 60px;
     transition: right 0.5s ease;
 }
@@ -31,7 +31,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #000000;
+    color: white;
     display: flex;
     transition: 0.3s;
 }
@@ -48,6 +48,53 @@ body {
 
 .sidenav.active {
     right: 0;
+}
+
+/* Sous-menu */
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    background-color: #444;
+    width: 200px;
+    padding-left: 0;
+    z-index: 1;
+}
+
+.sous-menu li a {
+    padding: 10px;
+    color: white;
+}
+
+.sous-menu li a:hover {
+    background-color: #575757;
+}
+
+.sidenav li {
+    position: relative;
+}
+
+.sidenav li:hover>.sous-menu {
+    display: block;
+}
+
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    background-color: #444;
+    width: 200px;
+    padding-left: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.sidenav li:hover>.sous-menu {
+    display: block;
+    opacity: 1;
 }
 
 #openBtn {

@@ -255,6 +255,14 @@ h1 {
 
 }
 
+.voir-plus {
+    display: block;
+    margin: 25px auto 25px auto;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
 .block img {
     border-radius: 5px;
     width: 350px;
@@ -552,13 +560,13 @@ h2 {
 
 }
 
-.container-end :hover {
+.container :hover {
     background-color: white;
     color: black;
 }
 
 footer {
-    /*background-color: #000000;*/
+
     color: #ffffff;
     text-align: left;
     list-style-type: none;
