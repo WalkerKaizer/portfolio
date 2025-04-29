@@ -49,18 +49,19 @@ function lazyLoad() {
         sousMenu.style.display = 'none';
     })
 
-const video = document.getElementById("video");
+    const videos = document.querySelectorAll(".video-hover ");
 
+    videos.forEach(video => {
+        video.addEventListener("mouseenter", () => {
+            video.play();
+        });
+    
+        video.addEventListener("mouseleave", () => {
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
 }
-video.addEventListener("mouseenter", () => {
-    video.play();
-});
-
-video.addEventListener("mouseleave", () => {
-    video.pause();
-    video.currentTime = 0;
-});
-
 
 
 

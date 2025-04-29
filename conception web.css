@@ -1,29 +1,25 @@
 body {
-    background-color: #000000;
+    background-color: black;
 }
 
 .Accueil a {
     display: flex;
-    font-family: "Domine";
-    font: weight 700px;
     font-size: 2em;
-    margin-left: 20px;
-    margin-top: 20px;
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
+    border: 50px;
 
 }
 
+
 .sidenav {
-    height: 100%;
-    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
     right: -250px;
-    background-color: #000000;
-    padding-top: 60px;
+    background-color: black;
+    padding-top: 40px;
     transition: right 0.5s ease;
 }
 
@@ -37,7 +33,8 @@ body {
 }
 
 .sidenav a:hover {
-    color: #00d1ff;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .sidenav ul {
@@ -48,6 +45,31 @@ body {
 
 .sidenav.active {
     right: 0;
+}
+
+
+#openBtn {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: flex;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
 }
 
 /* Sous-menu */
@@ -77,149 +99,73 @@ body {
 
 .sidenav li:hover>.sous-menu {
     display: block;
-}
-
-.sous-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: -200px;
-    background-color: #444;
-    width: 200px;
-    padding-left: 0;
-    z-index: 1;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
-}
-
-.sidenav li:hover>.sous-menu {
-    display: block;
     opacity: 1;
 }
 
-#openBtn {
-    position: absolute;
-    right: 0;
-    margin-right: 20px;
-    margin-top: 20px;
-
-}
-
-.sidenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-}
-
-.burger-icon span {
+/*main*/
+.content {
     display: flex;
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
+    gap: 20px;
+    margin-top: 100px;
+    flex-direction: row;
+    overflow: hidden;
+
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    margin: 20px;
-    padding: 20px;
-}
-
-.container div {
+/*les filtres*/
+.filters {
+    display: block;
+    background-color: #2C3130;
+    border-radius: 5px;
+    width: 150px;
     height: 200px;
+
 }
 
-/* .container_c1{
-    grid-row: 1/3;
-    grid-column: 1/1;
-} */
-.container_c1 a {
-    position: fixed;
-    background-color: #1e1e1e;
-    color: #fff;
-    border-radius: 5px;
-    width: 100px;
+.filters a {
+    display: block;
     text-decoration: none;
-    font-weight: bold;
-}
-
-
-.container_c2 {
-    grid-row: 1/3;
-    grid-column: 2/2;
-    display: flex;
-    flex-direction: column;
-}
-
-.video-hover {
-    width: 300px;
-    cursor: pointer;
-    background: white;
-    text-align: center;
-    object-fit: cover;
-    border: 2px solid white;
-}
-
-.white-background {
-    width: 300px;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-}
-
-
-/* .container_c3{
-    grid-row: 3/3;
-    grid-column:2/3;
-}
-
-.container_c4{
-    grid-row: 2/3;
-}
-.container_c5{
-    grid-row: 2/3;
-} */
-
-/*.nav-left {
-    position: fixed;
-    grid-row: 2/4;
-    background-color: #1e1e1e;
-    color: #fff;
+    color: #ffffff;
+    font-size: 1.2em;
     padding: 10px;
+    text-align: center;
     border-radius: 5px;
-    width: 100px;
-    margin-top: 35px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.nav-left .item {
+.filters a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*Projets*/
+.container-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 100%;
+    padding-bottom: 50px;
+    font-size: 1.2em;
+    color: black;
+    justify-content: center;
+}
+
+.container-item video {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.nav-left .item a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+.container-item p {
+    color: white;
 }
 
-.nav-left .item a:hover {
-    color: #00d1ff;
-}*/
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-    font-family: sans-serif;
-}
-
-
-
+/*button*/
 /*button {
     position: relative;
     font-size: 14px;

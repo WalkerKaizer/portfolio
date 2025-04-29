@@ -167,23 +167,6 @@ body {
 
 .sidenav li:hover>.sous-menu {
     display: block;
-}
-
-.sous-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: -200px;
-    background-color: #444;
-    width: 200px;
-    padding-left: 0;
-    z-index: 1;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
-}
-
-.sidenav li:hover>.sous-menu {
-    display: block;
     opacity: 1;
 }
 
