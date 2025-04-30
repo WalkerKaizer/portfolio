@@ -270,7 +270,10 @@ h2 {
 }
 
 /* Projets en cours */
-
+#Travaux a{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .Card {
     display: flex;

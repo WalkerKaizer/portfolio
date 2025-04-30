@@ -112,6 +112,27 @@ body {
 
 }
 
+.item-card p {
+    visibility: hidden; /* Cache la balise <b> au début */
+  }
+  
+  .item-card:hover p  {
+    visibility: visible; /* Affiche la balise <b> lors du survol */
+  }
+  
+  .item-card::before {
+    content: "Nom du Contenu";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: transparent; /* Rendre le texte transparent pour qu'il ne soit pas visible */
+    transition: color 0.3s ease; /* Transition de l'apparence */
+  }
+  
+  .item-card:hover::before {
+    color: black; /* Affiche le texte lors du survol */
+  }
+
 /*les filtres*/
 .filters {
     display: block;
@@ -163,7 +184,24 @@ body {
 
 .container-item p {
     color: white;
+    
 }
+
+.container-item a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.container-item img{
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+
+    
+    
+}
+
 
 /*button*/
 /*button {

@@ -1,0 +1,162 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+
+body {
+    background-color: black;
+}
+
+.Accueil a {
+    display: flex;
+    font-size: 2em;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    border: 50px;
+
+}
+
+
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color: black;
+    padding-top: 40px;
+    transition: right 0.5s ease;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav.active {
+    right: 0;
+}
+
+
+#openBtn {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: flex;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+/* Sous-menu */
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    background-color: #444;
+    width: 200px;
+    padding-left: 0;
+    z-index: 1;
+}
+
+.sous-menu li a {
+    padding: 10px;
+    color: white;
+}
+
+.sous-menu li a:hover {
+    background-color: #575757;
+}
+
+.sidenav li {
+    position: relative;
+}
+
+.sidenav li:hover>.sous-menu {
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+section{
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+
+}
+
+h1{
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+}
+
+#intro{
+    display: flex;
+    gap: 20px;
+}
+
+video{
+    border-radius: 10px;
+    border: 1px  solid;
+   
+    
+    box-shadow: aqua solid;
+}
+
+.element{
+    background-image: url("img/cursed.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 65vh;
+    width: 100%;
+}
+
+#lien ul {
+    list-style-type: none; 
+    
+}
+
+#lien ul li a {
+    text-decoration: none;
+    color: inherit; 
+}
+
