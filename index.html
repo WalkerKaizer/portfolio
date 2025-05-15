@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-<html>
 
 <head>
     <meta charset="utf-8" />
@@ -8,14 +7,12 @@
     <title>CuriousTech</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="responsive.css">
-
 </head>
 
 <body>
@@ -33,173 +30,224 @@
             </svg>
         </div>
 
-        <div class="background">
-            <video autoplay="autoplay" muted="" loop="infinite" src="Vidéo/Background.mp4"></video>
-            <div id="mySidenav" class="sidenav">
-                <a id="closeBtn" href="#" class="close">×</a>
-                <ul>
-                    <li><a href="Conception Web.html">Conception de site</a></li>
-                    <li id="montageMenu">
-                        <a href="Montage.html">Montage</a>
-                        <ul class="sous-menu">
-                            <li><a href="photo.html">photo</a></li>
-                            <li><a href="vidéo.html">vidéo</a></li>
-                        </ul>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </div>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="Conception Web.html">Conception de site</a></li>
+                <li><a href="Montage.html">Jeux vidéo</a></li>
+                <li><a href="Montage.html">Librairie</a></li>
 
-            <a href="#" id="openBtn">
-                <span class="burger-icon">
-                    <span></span>
-                    <span></span>
-                </span>
-            </a>
-            <div id="back" class="Accueil">
-                <p><a href="index.html"> CuriousTech</a></p>
-            </div>
+
+
+            </ul>
+        </div>
+
+
+        <button class="name-button" aria-label="Accueil">
+            <span class="initials">F.A.</span>
+            <span class="fullname">
+                <span>F</span><span>r</span><span>a</span><span>n</span><span>c</span><span>k</span>
+                <span>A</span><span>l</span><span>l</span><span>a</span><span>n</span>
+            </span>
+        </button>
+
+
+        <a href="#" id="openBtn" class="menu-button" aria-label="Menu">
+            <span class="menu-text">Menu</span>
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+
+            </span>
+        </a>
 
     </header>
+
     <main>
-        <section id="intro">
-            <h1>
-                Nous développons votre clientèle
-                <br>
-                à travers un site qui vous ressemble
-            </h1>
-            <div class="projet">
+        <section id="intro" class="apparition">
+            <div class="barre-titre">
+                <div class="barre"></div>
+                <h1>Je suis Ndombi-Gnele Franck Allan </h1>
+            </div>
+            <div class="contenu">
                 <div class="block">
-                    <img src="img/image10.jpg" alt="img10">
                     <p>
-                        Je suis Ndombi-Gnele Franck Allan étudiant en 2ème année de bachelor dans le digital.
-                        A travers ce site vous pourrez observer mes travaux. En developpement web, Montage photo et
-                        vidéo. <span class="voir-plus">Voir plus</span>
-
+                        étudiant en 2ème année de bachelor dans le digital.<br>
+                        A travers ce site vous pourrez observer mes travaux.
+                        En developpement web.<span class="hidden-text">J'aime beaucoup la lecture, la musique,
+                            les jeux vidéos, la photo et la vidéo.</span>
                     </p>
+                    <span class="voir-plus">Voir plus</span>
                 </div>
-
-            </div>
-
-        </section>
-        <section id="Travaux">
-            <h2><a href="Conception Web.html">Projets recents</a></h2>
-            <div class="Card">
-                <div class=" C1">
-                    <video class="video-hover" muted loop>
-                        <source src="Vidéo/déroulement infi.mp4" type="video/mp4">
-
-                    </video>
-
-
-                </div>
-
-                <div class=" C2">
-                    <video class="video-hover" muted loop>
-                        <source src="Vidéo/Enregistrement.mp4" type="video/mp4">
-
-                    </video>
-                </div>
-                <div class=" C3">
-                    <video class="video-hover" muted loop>
-                        <source src="Vidéo/rainFall.mp4" type="video/mp4">
-
-                    </video>
-                </div>
-                <div class=" C4">
-                    <video class="video-hover" muted loop>
-                        <source src="Vidéo/sunRising.mp4 " type="video/mp4">
-
-                    </video>
-                </div>
-            </div>
-
-        </section>
-        <script src="script.js"></script>
-        <section id="logiciel">
-            <h3>Langague</h3>
-            <div class="caroussel">
-                <div class="outil outil1">
-                    <img src="img/php.png" alt="img4">
-                </div>
-                <div class="outil outil2">
-                    <img src="img/Python.png" alt="img5">
-                </div>
-                <div class="outil outil3">
-                    <img src="img/Js.png" alt="img6">
-                </div>
-                <div class="outil outil4">
-                    <img src="img/html.webp" alt="img8">
-                </div>
-                <div class="outil outil5">
-                    <img src="img/Css.png" alt="img9">
-                </div>
-
+                <aside> <img src="img/image10.jpg" alt="img10"></aside>
             </div>
         </section>
 
-        <section id="coworking">
-            <h2> Projets d'équipe</h2>
-            <div class="co-projet">
-                <div class="co projet5">
-                    <img src="img/image16.jpg" alt="img16">
-                </div>
-                <div class="co projet6">
-                    <img src="img/image17.jpg" alt="img17">
-                </div>
-                <div class="co projet7">
-                    <img src="img/image18.jpg" alt="img18">
+        <section id="Travaux" class="apparition">
+            <h2>Projets recents</h2>
+            <div class="carousel-container">
+                <div class="carousel-view">
+                    <div class="carousel-item active" id="project-1">
+                        <div class="media"><video class="video-hover" muted loop autoplay playsinline>
+                                <source src="Vidéo/déroulement infi.mp4" type="video/mp4">
+                        </div>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat incidunt unde a, <br>
+                                mollitia eum odit? Ipsum corrupti obcaecati temporibus corporis, rerum consequatur atque
+                                dolor
+                                nisi, <br>
+                                in exercitationem asperiores iure accusantium.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="project-2">
+                        <div class="media">
+                            <video class="video-hover" muted loop autoplay playsinline>
+                                <source src="Vidéo/Enregistrement.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat incidunt unde a, <br>
+                                mollitia eum odit? Ipsum corrupti obcaecati temporibus corporis, rerum consequatur atque
+                                dolor
+                                nisi, <br>
+                                in exercitationem asperiores iure accusantium.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="project-3">
+                        <div class="media"><video class="video-hover" muted loop autoplay playsinline>
+                                <source src="Vidéo/rainFall.mp4" type="video/mp4">
+                            </video></div>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat incidunt unde a, <br>
+                                mollitia eum odit? Ipsum corrupti obcaecati temporibus corporis, rerum consequatur atque
+                                dolor
+                                nisi, <br>
+                                in exercitationem asperiores iure accusantium.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="carousel-dots">
+                    <a href="#project-1" data-index="0"><span></span></a>
+                    <a href="#project-2" data-index="1"><span></span></a>
+                    <a href="#project-3" data-index="2"><span></span></a>
+                </div>
+                <button src="">Voir plus</button>
+
+                <script src="index.js"></script>
             </div>
+        </section>
+
+        <section id="Game" class="apparition">
+            <h3>jeux vidéo</h3>
+            <div class="card">
+                <img src="img/cursed.jpg" alt="">
+                <p>Dans ce jeu d'aventure 2D, vous incarnez Stuart, un explorateur intrépide passionné par les mystères <br>
+                    de l'Égypte antique. Lors d’une expédition en plein désert, une découverte inattendue change le <br>
+                    cours de son voyage : il chute accidentellement dans une pyramide oubliée, ensevelie depuis des
+                    millénaires et absente de toutes les cartes.
+
+                </p>
+                </img>
+                <div class="buttons">
+                    <a href="lien-vers-jeu.html" class="Btn">Jouer</a>
+                    <a href="lien-vers-page-da.html" class="Btn secondary">Voir la page</a>
+                </div>
+        </section>
+
+
+        <section id="Librairie" class="apparition">
+            <h3>Librairy</h3>
+            <div class="Card-library">
+                <div class="library">
+                    <video src="Vidéo/react.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <div class="library">
+                    <video src="Vidéo/rainFall.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <div class="library">
+                    <video src="Vidéo/sunRising.mp4" autoplay muted loop playsinline></video>
+                </div>
+            </div>
+            <div class="button">
+                <a href="lien-vers-page-da.html" class="Btn-reach">Découvrir</a>
+            </div>
+        </section>
+
+
+        <section id="logiciel" class="apparition">
+            <h3>Langage&Framework</h3>
+            <div class="cards-content">
+                <div class="card-tools">
+                    <img src="img/php.png" alt="Logo PHP">
+                    <p>PHP</p>
+                </div>
+                <div class="card-tools">
+                    <img src="img/Python.png" alt="Logo Python">
+                    <p>Python</p>
+                </div>
+                <div class="card-tools">
+                    <img src="img/js.png" alt="Logo JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="card-tools">
+                    <img src="img/html.webp" alt="Logo HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="card-tools">
+                    <img src="img/css.png" alt="Logo CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="card-tools">
+                    <img src="img/React-icon.svg.png" alt="Logo React">
+                    <p>React</p>
+                </div>
+                <div class="card-tools">
+                    <img src="img/Laravel.png" alt="Logo laravel">
+                    <p>Laravel</p>
+                </div>
+            </div>
+        </section>
+
+
+     
+        <section id="contact">
+            <form>
+                <h1>Contactez-moi !</h1>
+                <input placeholder="Nom" tye="text" />
+                <input placeholder="E-mail" type="text" />
+                <input placeholder="Téléphone" type="text" />
+                <input placeholder="message" type="text" />
+                <button>Envoyer</button>
+            </form>
 
         </section>
-        <div class="hobbies">
-            <h2>Hobbies</h2>
-            <div class="hobby">
-                <img src="img/image22.jpg" alt="">
-                <span>Photo&Vidéo</span>
-            </div>
-            <div class="hobby">
-                <img src="img/image23.jpg" alt="">
-                <span>Lecture</span>
-            </div>
-            <div class="hobby">
-                <img src="img/image20.jpg" alt="">
-                <span>Gaming</span>
-            </div>
-            <div class="hobby">
-                <img src="img/image21.jpg" alt="">
-                <span>Musique</span>
-            </div>
-        </div>
+
 
     </main>
-    <footer>
+
+    <footer class="apparition">
         <div class="container-end">
             <h2>Contact&Réseaux</h2>
-            <div class="container">
-                <a href="Contact.html">
-                    <p>Contact</p>
-
-                </a>
-            </div>
-            <div class="container">
-                <a href="https://www.instagram.com/ng_f.allan/?__pwa=1">
+            <div class="container"><a href="https://www.instagram.com/ng_f.allan/?__pwa=1">
                     <p>instagram</p>
-                </a>
-            </div>
-            <div class="container">
-                <a href="https://www.linkedin.com/in/franck-allan-ndombi-gnele-040381214/">
+                </a></div>
+            <div class="container"><a href="https://www.linkedin.com/in/franck-allan-ndombi-gnele-040381214/">
                     <p>Linkdln</p>
-                </a>
-            </div>
-            <div class="container">
-                <a href="https://github.com/WalkerKaizer">
+                </a></div>
+            <div class="container"><a href="https://github.com/WalkerKaizer">
                     <p>Github</p>
-                </a>
-            </div>
+                </a></div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

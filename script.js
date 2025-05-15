@@ -14,16 +14,27 @@ function closeNav() {
     sidenav.classList.remove("active");
 }
 
-var montageMenu = document.getElementById("montageMenu");
-var sousMenu = montageMenu.querySelector(".sous-menu");
 
-montageMenu.addEventListener('mouseenter', function () {
-    sousMenu.style.display = 'block';
-});
 
-montageMenu.addEventListener('mouseleave', function () {
-    sousMenu.style.display = 'none';
-});
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+  
+  document.querySelectorAll('.apparition').forEach(el => {
+    observer.observe(el);
+  });
+  
+
+
+
 window.addEventListener("load", function () {
     // Garde le loader visible pendant 3 secondes (3000ms)
     setTimeout(() => {
@@ -33,6 +44,21 @@ window.addEventListener("load", function () {
         document.getElementById("content").style.display = "block";
     }, 3000); // 3000ms = 3 secondes
 });
+
+
+//hiden-text
+
+  const block = document.querySelector('.block');
+  const toggleBtn = block.querySelector('.voir-plus');
+  const hiddenText = block.querySelector('.hidden-text');
+
+  toggleBtn.addEventListener('click', () => {
+    block.classList.toggle('expanded');
+    toggleBtn.textContent = block.classList.contains('expanded') ? 'Voir moins' : 'Voir plus';
+  });
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenElements = document.querySelectorAll('.hidden');
