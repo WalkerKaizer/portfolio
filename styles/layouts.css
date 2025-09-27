@@ -1,0 +1,122 @@
+/* === Structure générale d'une page projet === */
+.project-page {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* === Hero section === */
+.project-hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-hero-media {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    border: 6px solid rgb(0, 0, 0);
+    box-shadow: 8px 8px 0 0 rgb(0, 0, 0);
+}
+
+.project-goals {
+   
+    background: #181717;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-goals h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.project-goals p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.tech-stack img {
+    display: flex;
+    justify-content: space-between;
+    max-width: 20%; 
+    height: auto;     
+    border-radius: 100%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    gap: 20px;
+}
+
+.tech-stack img:hover {
+    transform: scale(1.05); /* petit zoom au survol */
+}
+
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.project-details ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.project-details li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* === Section liens (GitHub, etc.) === */
+.project-links {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-links h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.project-links a img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.project-links a img:hover {
+    transform: scale(1.1);
+}
+
+.project-links p {
+    margin-top: 10px;
+    font-size: 1rem;
+}

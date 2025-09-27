@@ -1,0 +1,67 @@
+.section-videos {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* 200px pour le filtre, reste pour les vidéos */
+    gap: 20px;
+    padding: 20px; /* espace autour de toute la section */
+}
+
+/* Filtre à gauche */
+.filters {
+    padding-left: 25px; /* espace du filtre par rapport au bord */
+}
+
+.filters ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filters li {
+    margin-bottom: 10px;
+}
+
+.filters a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    padding: 4px 0;
+    transition: color 0.3s;
+}
+
+.filters a:hover {
+    color: #007bff;
+}
+
+.content-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Chaque item garde sa taille */
+.item {
+    width: 400px;
+    height: 300px; /* hauteur fixe pour uniformité */
+    overflow: hidden; /* pour couper le débordement lors du hover */
+    position: relative;
+}
+
+/* Vidéos */
+.item video {
+    width: 100% !important;    /* force remplissage horizontal */
+    height: 100% !important;   /* force remplissage vertical */
+    object-fit: cover !important; /* remplissage correct sans déformation */
+    display: block;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+/* Effet hover sur les vidéos */
+.item video.video-hover {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
+    pointer-events: auto; /* permet à JS de détecter le hover */
+}
+

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport">
+    <title>CuriousTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/body.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div id="loader">
+            <svg viewBox="0 0 240 240" height="240" width="240" class="pl">
+                <circle stroke-linecap="round" stroke-dashoffset="-330" stroke-dasharray="0 660" stroke-width="20"
+                    stroke="#000" fill="none" r="105" cy="120" cx="120" class="pl__ring pl__ring--a"></circle>
+                <circle stroke-linecap="round" stroke-dashoffset="-110" stroke-dasharray="0 220" stroke-width="20"
+                    stroke="#000" fill="none" r="35" cy="120" cx="120" class="pl__ring pl__ring--b"></circle>
+                <circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none"
+                    r="70" cy="120" cx="85" class="pl__ring pl__ring--c"></circle>
+                <circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none"
+                    r="70" cy="120" cx="155" class="pl__ring pl__ring--d"></circle>
+            </svg>
+        </div>
+
+        <div id="content" style="display:none;">
+           
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li><a href="./api&web.html" data-name="api-web">Conception de site</a></li>
+                    <li><a href="jeux-vidéo.html" data-name="jeux-video">Jeux vidéo</a></li>
+                    <li><a href="./library.html" data-name="librairie">Librairie</a></li>
+                </ul>
+            </div>
+    
+            <button class="name-button" aria-label="Accueil" onclick="location.href='index.html';">
+                <span class="initials">F.A.</span>
+                <span class="fullname">
+                    <span>F</span><span>r</span><span>a</span><span>n</span><span>c</span><span>k</span>
+                    <span>A</span><span>l</span><span>l</span><span>a</span><span>n</span>
+                </span>
+            </button>
+    
+    
+    
+            <a href="#" id="openBtn" class="menu-button" aria-label="Menu">
+                <span class="menu-text">Menu</span>
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+    
+                </span>
+            </a>
+    
+        </header>
+    
+        <main>
+            <section id="intro" class="apparition">
+                <div class="barre-titre">
+                    <div class="barre"></div>
+                    <h1>Je suis Ndombi-Gnele Franck Allan </h1>
+                </div>
+                <div class="contenu">
+                    <div class="block">
+                        <p>
+                            étudiant en 2ème année de bachelor dans le digital.<br>
+                            A travers ce site vous pourrez observer mes travaux.
+                            En developpement web.<span class="hidden-text">J'aime beaucoup la lecture, la musique,
+                                les jeux vidéos, la photo et la vidéo.</span>
+                        </p>
+                        <span class="voir-plus">Voir plus</span>
+                    </div>
+                    <aside> <img src="../img/image10.jpg" alt="img10"></aside>
+                </div>
+            </section>
+    
+            <section id="Travaux" class="apparition">
+                <h2>Projets recents</h2>
+                <div class="carousel-container">
+                    <div class="carousel-view">
+                        <div class="carousel-item active" id="project-1">
+                            <div class="media">
+                                <img src="../img/img-canoe.png" alt="Alison Canoë">
+                            </div>
+                            <div class="description">
+                                <p>
+                                    Stage de 2ème année de bachelor en développement web chez Alison Canoë.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="project-2">
+                            <div class="media">
+                               <img src="../img/laravel.jpg" alt="Gestion de facture">
+                            </div>
+                            <div class="description">
+                                <p>
+                                    Application de gestion de factures réalisée avec le framework Laravel.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="project-3">
+                            <div class="media">
+                                <img src="../img/cursed.jpg" alt="Cursed adventure">
+                            </div>
+                            <div class="description">
+                                <p>
+                                    Découvrez "Cursed Adventure", un jeu d'aventure 2D captivant où vous incarnez Stuart
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-dots">
+                        <a href="#project-1" data-index="0"><span></span></a>
+                        <a href="#project-2" data-index="1"><span></span></a>
+                        <a href="#project-3" data-index="2"><span></span></a>
+                    </div>
+                    <button onclick="location.href='../pages/api&web.html'">Voir plus</button>
+    
+                    <script src="/script/index.js"></script>
+                </div>
+            </section>
+    
+            <section id="Game" class="apparition">
+                <h3>jeux vidéo</h3>
+                <div class="card">
+                    <img src="../img/cursed.jpg" alt="">
+                    <p>Dans ce jeu d'aventure 2D, vous incarnez Stuart, un explorateur intrépide passionné par les mystères
+                        <br>
+                        de l'Égypte antique. Lors d’une expédition en plein désert, une découverte inattendue change le <br>
+                        cours de son voyage : il chute accidentellement dans une pyramide oubliée, ensevelie depuis des
+                        millénaires et absente de toutes les cartes.
+    
+                    </p>
+                    </img>
+                    <div class="buttons">
+                        <a href="lien-vers-jeu.html" class="Btn">Jouer</a>
+                        <a href="Cursed adventure.html" class="Btn secondary">Voir la page</a>
+                    </div>
+            </section>
+    
+    
+            <section id="Librairie" class="apparition">
+                <h3>Animation</h3>
+                <div class="Card-library">
+                    <div class="library">
+                        <video src="../Vidéo/react.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <div class="library">
+                        <video src="../Vidéo/rainFall.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <div class="library">
+                        <video src="../Vidéo/sunRising.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="Librairie.html" class="Btn-reach">Découvrir</a>
+                </div>
+            </section>
+    
+    
+            <section id="langage" class="apparition">
+                <h3>Langage & Framework</h3>
+                <div class="cards-content">
+                    <div class="cards-content-left">
+                        <div class="card-tools">
+                            <img src="../img/php.png" alt="Logo PHP">
+                            <p>PHP</p>
+                        </div>
+                        <div class="card-tools">
+                            <img src="../img/Python.png" alt="Logo Python">
+                            <p>Python</p>
+                        </div>
+                        <div class="card-tools">
+                            <img src="../img/js.png" alt="Logo JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="card-tools">
+                            <img src="../img/html.webp" alt="Logo HTML">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+    
+                    <div class="cards-content-right">
+                        <div class="card-tools">
+                            <img src="../img/css.png" alt="Logo CSS">
+                            <p>CSS</p>
+                        </div>
+                        <div class="card-tools">
+                            <img src="../img/React-icon.svg.png" alt="Logo React">
+                            <p>React</p>
+                        </div>
+                        <div class="card-tools">
+                            <img src="../img/Laravel.png" alt="Logo Laravel">
+                            <p>Laravel</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+    
+    
+    
+    
+    
+        </main>
+        </div>
+
+
+    <footer class="apparition">
+        <div class="container-end">
+            <h2>Contact&Réseaux</h2>
+            <div class="container"><a href="https://www.instagram.com/ng_f.allan/?__pwa=1">
+                    <p>instagram</p>
+                </a></div>
+            <div class="container"><a href="https://www.linkedin.com/in/franck-allan-ndombi-gnele-040381214/">
+                    <p>Linkdln</p>
+                </a></div>
+            <div class="container"><a href="https://github.com/WalkerKaizer">
+                    <p>Github</p>
+                </a></div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

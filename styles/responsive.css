@@ -1,0 +1,437 @@
+
+
+@media screen and (max-width: 1024px) {
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 5vh;
+    }
+    
+    .name-button {
+        font-size: 1.5rem;
+    }
+    
+    .project-page {
+        width: 85%;
+        padding: 15px;
+        gap: 30px;
+    }
+    
+    .project-title {
+        font-size: 2rem;
+    }
+    
+    .project-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    #intro {
+        padding: 30px 15px;
+    }
+    
+    .contenu {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .block {
+        width: 80%;
+        max-width: 600px;
+    }
+    
+    aside img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .carousel-item {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .media video {
+        max-width: 400px;
+    }
+    
+    .card {
+        flex-direction: column;
+        text-align: center;
+        max-width: 600px;
+    }
+    
+    .card img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .Card-library {
+        gap: 20px;
+    }
+    
+    .library {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .section-videos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .filters {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .filters ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .content-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
+    
+    .item {
+        width: 300px;
+        height: 225px;
+    }
+    
+    .cards-content {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card-tools {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    header {
+        padding: 10px 15px;
+        margin-bottom: 3vh;
+        flex-wrap: wrap;
+    }
+    
+    .name-button {
+        font-size: 1.3rem;
+        height: 35px;
+    }
+    
+    .menu-button {
+        font-size: 1rem;
+        height: 35px;
+    }
+    
+    .burger-icon span {
+        width: 18px;
+        height: 2px;
+    }
+    
+    .sidenav {
+        width: 100%;
+        right: -100%;
+    }
+    
+    .sidenav a {
+        font-size: 20px;
+        padding: 12px 16px;
+    }
+    
+    .project-page {
+        width: 95%;
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    .project-title {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .project-subtitle {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .project-hero {
+        padding: 15px;
+    }
+    
+    #intro {
+        padding: 20px 10px;
+    }
+    
+    .barre {
+        width: 60%;
+    }
+    
+    .contenu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .block {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .block p {
+        font-size: 1.2em;
+    }
+    
+    aside img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+    
+    .carousel-item {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .media video {
+        max-width: 100%;
+        width: 280px;
+    }
+    
+    .description {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+    .carousel-container button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .card {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 15px;
+    }
+    
+    .card img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .card p {
+        font-size: 0.9em;
+        text-align: center;
+    }
+    
+    .buttons {
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .Btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .Card-library {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .library {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .section-videos {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .filters ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .filters a {
+        padding: 8px 12px;
+        text-align: center;
+        background: rgba(255,255,255,0.1);
+        border-radius: 5px;
+    }
+    
+    .content-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .item {
+        width: 100%;
+        max-width: 320px;
+        height: 240px;
+    }
+    
+    .cards-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .cards-content-left,
+    .cards-content-right {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .card-tools {
+        width: 250px;
+        justify-content: center;
+    }
+    
+    .tech-stack {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .tech-stack img {
+        max-width: 15%;
+        min-width: 40px;
+    }
+    
+    .project-details,
+    .project-goals {
+        padding: 15px;
+    }
+    
+    .project-details h2,
+    .project-goals h2 {
+        font-size: 1.5rem;
+    }
+    
+    .project-details li {
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+    
+    .project-links a img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .container a {
+        height: 80px;
+        font-size: 1.1rem;
+    }
+    
+    .container-end h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .name-button {
+        font-size: 1.1rem;
+    }
+    
+    .project-title {
+        font-size: 1.5rem;
+    }
+    
+    aside img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .media video {
+        width: 250px;
+    }
+    
+    .card img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .library {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .item {
+        height: 200px;
+    }
+    
+    .card-tools {
+        width: 200px;
+        padding: 8px 12px;
+    }
+    
+    .card-tools img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .content-card,
+    .project-page,
+    .Card-library {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .Btn,
+    .carousel-dots a,
+    .filters a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    p, .description {
+        line-height: 1.6;
+    }
+    
+    .apparition {
+        transform: translateY(-20px);
+        transition: all 0.8s ease-out;
+    }
+    
+    .item {
+        box-shadow: 4px 4px 0 0 black;
+    }
+}

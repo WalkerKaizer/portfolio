@@ -1,258 +1,4 @@
-
-html{
-    scroll-behavior: smooth;
-}
-* {
-    font-family: 'Oswald', serif !important;
-}
-
-body {
-    background-color:#0F0F0F ;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-/* Animation des cercles */
-.pl__ring {
-    animation: dash 1.5s ease-in-out infinite;
-
-}
-
-.pl__ring--a {
-    animation-delay: -0.4s;
-    stroke: #ffdd00;
-}
-
-.pl__ring--b {
-    animation-delay: -0.3s;
-    stroke: #255ff4;
-}
-
-.pl__ring--c {
-    animation-delay: -0.2s;
-    stroke: #2cf425;
-}
-
-.pl__ring--d {
-    animation-delay: -0.1s;
-    stroke: #f42f25;
-}
-
-@keyframes dash {
-    0% {
-        stroke-dasharray: 1 660;
-        stroke-dashoffset: 0;
-    }
-
-    50% {
-        stroke-dasharray: 330 330;
-        stroke-dashoffset: -165;
-    }
-
-    100% {
-        stroke-dasharray: 1 660;
-        stroke-dashoffset: -660;
-    }
-}
-/*header*/
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    margin-bottom: 10vh;
-}
-#content {
-    display: none;
-}
-
-.name-button {
-    position: relative;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  overflow: hidden;
-  color: #fcf9f9;
-  display: flex;
-  align-items: center;
-  height: 40px;
-  }
-  
-  .initials,
-  .fullname {
-    display: inline-block;
-    transition: opacity 0.3s ease;
-    white-space: nowrap;
-    
-  }
-  
-  .fullname span {
-    opacity: 0;
-    display: inline-block;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* Cacher le nom complet par défaut */
-  .fullname {
-    position: relative;
-    min-width: 120px;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-  }
-  
-  /* Survol : cacher les initiales et afficher chaque lettre du prénom progressivement */
-  .name-button:hover .initials {
-    opacity: 0;
-  }
-  
-  .name-button:hover .fullname span {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .name-button:hover .fullname span:nth-child(1) { transition-delay: 0s; }
-  .name-button:hover .fullname span:nth-child(2) { transition-delay: 0.05s; }
-  .name-button:hover .fullname span:nth-child(3) { transition-delay: 0.1s; }
-  .name-button:hover .fullname span:nth-child(4) { transition-delay: 0.15s; }
-  .name-button:hover .fullname span:nth-child(5) { transition-delay: 0.2s; }
-  .name-button:hover .fullname span:nth-child(6) { transition-delay: 0.25s; }
-  .name-button:hover .fullname span:nth-child(7) { transition-delay: 0.3s; }
-  .name-button:hover .fullname span:nth-child(8) { transition-delay: 0.35s; }
-  .name-button:hover .fullname span:nth-child(9) { transition-delay: 0.4s; }
-  .name-button:hover .fullname span:nth-child(10) { transition-delay: 0.45s; }
-  .name-button:hover .fullname span:nth-child(11) { transition-delay: 0.5s; }
-  
-
-
-.sidenav {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: -250px;
-    background-color: black;
-    padding-top: 40px;
-    transition: right 0.5s ease;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: flex;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    background-color: white;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.sidenav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidenav.active {
-    right: 0;
-}
-
-
-.sidenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-}
-
-.menu-button {
-    display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  height: 40px;
-  }
-  
-  .burger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3px; 
-  }
-  
-  
-  .burger-icon span {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: white;
-  }
-  
-  .menu-text {
-    font-size: 1.2em;
-    color: white;
-  }
-  
-
-/* Sous-menu */
-.sous-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: -200px;
-    background-color: #444;
-    width: 200px;
-    padding-left: 0;
-    z-index: 1;
-}
-
-.sous-menu li a {
-    padding: 10px;
-    color: white;
-}
-
-.sous-menu li a:hover {
-    background-color: #575757;
-}
-
-.sidenav li {
-    position: relative;
-}
-
-.sidenav li:hover>.sous-menu {
-    display: block;
-    opacity: 1;
-}
-
-* {
-    margin: 0;
-}
-
-
-
-
-
+/*home css*/
 
 /*main projets*/
 
@@ -393,7 +139,7 @@ p{
     color: aliceblue;
 }
 
-.media video {
+.media img {
   max-width: 300px;
   border-radius: 10px;
   object-fit: cover;
@@ -508,7 +254,7 @@ p{
 /*librairie*/
 #Librairie h3{
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
     margin: 25px 0 25px 0px;
 
 }
@@ -557,10 +303,10 @@ p{
 
 
 
-#logiciel h3 {
+#langage h3 {
     text-align: center;
     font-size: 2em;
-    margin: 25px 0 25px 0px;
+    margin: 25px 0px 25px 0px;
 }
 
 *,
@@ -573,11 +319,19 @@ p{
     margin: 0;
 }
 
+
+
 .cards-content {
     display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cards-content-left,
+.cards-content-right {
+    display: flex;
     flex-direction: column;
-    gap: 15px;
-    align-items: center;
+    gap: 15px; 
 }
 
 .card-tools {
@@ -608,6 +362,7 @@ p{
 
 
 
+
 .container a {
     display: flex;
     align-items: center;
@@ -620,22 +375,4 @@ p{
     height: 100px;
     text-decoration: none;
 
-}
-
-.container :hover {
-    background-color: white;
-    color: black;
-}
-
-footer {
-
-    color: #ffffff;
-    text-align: left;
-    list-style-type: none;
-}
-
-.footer.sm {
-    margin-left: 25px;
-    border-top: solid, 1px, white;
-    border-bottom: solid, 1px, white;
 }

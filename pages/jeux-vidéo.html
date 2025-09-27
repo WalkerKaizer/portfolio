@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport">
+    <title>CuriousTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/body.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header>
+        <div id="loader">
+            <svg viewBox="0 0 240 240" height="240" width="240" class="pl">
+                <circle stroke-linecap="round" stroke-dashoffset="-330" stroke-dasharray="0 660" stroke-width="20"
+                    stroke="#000" fill="none" r="105" cy="120" cx="120" class="pl__ring pl__ring--a"></circle>
+                <circle stroke-linecap="round" stroke-dashoffset="-110" stroke-dasharray="0 220" stroke-width="20"
+                    stroke="#000" fill="none" r="35" cy="120" cx="120" class="pl__ring pl__ring--b"></circle>
+                <circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none"
+                    r="70" cy="120" cx="85" class="pl__ring pl__ring--c"></circle>
+                <circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none"
+                    r="70" cy="120" cx="155" class="pl__ring pl__ring--d"></circle>
+            </svg>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="./api&web.html" data-name="api-web">Conception de site</a></li>
+                <li><a href="./jeux-video.html" data-name="jeux-video">Jeux vidéo</a></li>
+                <li><a href="./library.html" data-name="librairie">Librairie</a></li>
+            </ul>
+        </div>
+
+
+        <button class="name-button" aria-label="Accueil" onclick="location.href='index.html';">
+            <span class="initials">F.A.</span>
+            <span class="fullname">
+                <span>F</span><span>r</span><span>a</span><span>n</span><span>c</span><span>k</span>
+                <span>A</span><span>l</span><span>l</span><span>a</span><span>n</span>
+            </span>
+        </button>
+
+
+        <a href="#" id="openBtn" class="menu-button" aria-label="Menu">
+            <span class="menu-text">Menu</span>
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+
+            </span>
+        </a>
+
+    </header>
+
+    <main>
+        <h1>Jeux Vidéo</h1>
+
+        <div class="content-card">
+            <div class="item" data-soon="true">
+                <a href="projet.html?name=CursedAdventure" data-project-id="CursedAdventure">
+                    <img src="../img/cursed.jpg" alt="CursedAdventure">
+                </a>
+            </div>
+            <div class="item" data-soon="true">
+                <a href="projet.html?name=projet-3" data-project-id="">
+                    <img src="../img/bientôt.jpg" alt="Projet 3">
+                </a>
+            </div>
+            <div class="item" data-soon="true">
+                <a href="projet.html?name=projet-4" data-project-id="">
+                    <img src="../img/bientôt.jpg" alt="Projet 4">
+                </a>
+            </div>
+            <div class="item" data-soon="true">
+                <a href="projet.html?name=projet-5" data-project-id="">
+                    <img src="../img/bientôt.jpg" alt="Projet 5">
+                </a>
+            </div>
+            <div class="item" data-soon="true">
+                <a href="projet.html?name=projet-6" data-project-id="">
+                    <img src="../img/bientôt.jpg" alt="Projet 6">
+                </a>
+            </div>
+            <div class="item" data-soon="true">
+                <a href="projet.html?name=projet-7" data-project-id="projet-7">
+                    <img src="../img/bientôt.jpg" alt="Projet 7">
+                </a>
+            </div>
+            <div class="item" data-soon="true">
+                <a href="projet.html?name=projet-8" data-project-id="projet-8">
+                    <img src="../img/bientôt.jpg" alt="Projet 8">
+                </a>
+            </div>
+        </div>
+    </main>
+    </main>
+
+
+
+    <footer class="apparition">
+        <div class="container-end">
+            <h2>Contact&Réseaux</h2>
+            <div class="container"><a href="https://www.instagram.com/ng_f.allan/?__pwa=1">
+                    <p>instagram</p>
+                </a></div>
+            <div class="container"><a href="https://www.linkedin.com/in/franck-allan-ndombi-gnele-040381214/">
+                    <p>Linkdln</p>
+                </a></div>
+            <div class="container"><a href="https://github.com/WalkerKaizer">
+                    <p>Github</p>
+                </a></div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/project.js"></script>
+</body>
+
+</html>

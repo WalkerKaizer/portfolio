@@ -30,3 +30,16 @@
     updateCarousel(nextIndex);
   }, 8000); 
 
+  const videos = document.querySelectorAll(".video-hover ");
+
+    videos.forEach(video => {
+        video.addEventListener("mouseenter", () => {
+            video.play();
+        });
+    
+        video.addEventListener("mouseleave", () => {
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
+

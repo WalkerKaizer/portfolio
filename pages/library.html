@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>CuriousTech</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles/body.css">
+    <link rel="stylesheet" href="../styles/Library.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+
+</head>
+
+<body>
+    <header>
+
+        <div id="loader">
+            <svg viewBox="0 0 240 240" height="240" width="240" class="pl">
+                <circle stroke-linecap="round" stroke-dashoffset="-330" stroke-dasharray="0 660" stroke-width="20"
+                    stroke="#000" fill="none" r="105" cy="120" cx="120" class="pl__ring pl__ring--a"></circle>
+                <circle stroke-linecap="round" stroke-dashoffset="-110" stroke-dasharray="0 220" stroke-width="20"
+                    stroke="#000" fill="none" r="35" cy="120" cx="120" class="pl__ring pl__ring--b"></circle>
+                <circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none"
+                    r="70" cy="120" cx="85" class="pl__ring pl__ring--c"></circle>
+                <circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none"
+                    r="70" cy="120" cx="155" class="pl__ring pl__ring--d"></circle>
+            </svg>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="#" data-name="api-web">Conception de site</a></li>
+                <li><a href="#" data-name="jeux-video">Jeux vidéo</a></li>
+                <li><a href="#" data-name="librairie">Librairie</a></li>
+            </ul>
+        </div>
+
+
+        <button class="name-button" aria-label="Accueil" onclick="location.href='index.html';">
+            <span class="initials">F.A.</span>
+            <span class="fullname">
+                <span>F</span><span>r</span><span>a</span><span>n</span><span>c</span><span>k</span>
+                <span>A</span><span>l</span><span>l</span><span>a</span><span>n</span>
+            </span>
+        </button>
+
+
+        <a href="#" id="openBtn" class="menu-button" aria-label="Menu">
+            <span class="menu-text">Menu</span>
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+
+            </span>
+        </a>
+    </header>
+
+
+    <main>
+        <h1>Library</h1>
+
+        <section class="section-videos">
+            <nav class="filters">
+                <ul>
+                    <li><a href="#">Loader</a></li>
+                    <li><a href="#">Boutton</a></li>
+                    <li><a href="#">Carroussel</a></li>
+                    <li><a href="#">Animation</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="content-card">
+                <div class="item">
+                    <video class="video-hover" muted loop>
+                        <source src="../Vidéo/déroulement infi.mp4" type="video/mp4">
+                    </video>
+                    <p>carroussel infini</p>
+                </div>
+
+                <div class="item">
+                    <video class="video-hover" muted loop>
+                        <source src="../Vidéo/Enregistrement.mp4" type="video/mp4">
+                    </video>
+                    <p>Spin</p>
+                </div>
+
+                <div class="item">
+                    <video class="video-hover" muted loop>
+                        <source src="../Vidéo/rainFall.mp4" type="video/mp4">
+                    </video>
+                    <p>rain.download</p>
+                </div>
+
+                <div class="item">
+                    <video class="video-hover" muted loop>
+                        <source src="../Vidéo/sunRising.mp4" type="video/mp4">
+                    </video>
+                    <p>Loader.sun rising</p>
+                </div>
+
+                <div class="item">
+                    <video class="video-hover" muted loop>
+                        <source src="../Vidéo/react.mp4" type="video/mp4">
+                    </video>
+                    <p>Loader.react</p>
+                </div>
+
+                <div class="item">
+                    <video class="video-hover" muted loop>
+                        <source src="../Vidéo/" type="video/mp4">
+                    </video>
+                    <p>factCurious</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../script/script.js"></script>
+    <script src="../script/index.js"></script>
+    </main>
+</body>
+
+</html>
